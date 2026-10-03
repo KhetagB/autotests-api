@@ -15,7 +15,7 @@ class CourseServiceServicer(course_service_pb2_grpc.CourseServiceServicer):
         print(f'Получен запрос к методу GetCourse от пользователя: {request.course_id}')
 
         # Формируем и возвращаем ответное сообщение
-        return course_service_pb2.GetCourseResponse(course_id = request.course_id, title ="Автотесты API", description ="Будем изучать написание API автотестов")
+
 
 
 # Функция для запуска gRPC-сервера
